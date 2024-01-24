@@ -21,6 +21,7 @@
 					<p>Nemandi á þriðja ári í vélaverkfræði
 					og sjómaður</p>
 				</header>
+                
 				<nav id="nav">
 					<ul>
 						<li><a href="#one" class="active">Verkefni 1</a></li>
@@ -30,6 +31,26 @@
                         <li><a href="#five">Ferilskrá (um mig)</a></li>
 					</ul>
 				</nav>
+                <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get all navigation links
+    var navLinks = document.querySelectorAll("#nav a");
+
+    // Add click event listener to each link
+    navLinks.forEach(function(link) {
+      link.addEventListener("click", function() {
+        // Remove "active" class from all links
+        navLinks.forEach(function(navLink) {
+          navLink.classList.remove("active");
+        });
+
+        // Add "active" class to the clicked link
+        this.classList.add("active");
+      });
+    });
+  });
+</script>
+
 				<footer>
 					<ul class="icons">
 						<li><a href="https://www.facebook.com/profile.php?id=100010093302915" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -54,7 +75,7 @@
 										<h2>Velkominn í áfangann Tölvustudd framleiðsla VÉL608G</h2>
 										<p>Verkefni 1</p>
 									</header>
-									<p>Sniðmátið af þessari síðu er sótt af html5up.net og var innblásturinn fenginn af því hversu snirtileg síðan var og hversu einfalt er að skoða upplýsingar á henni. Gott finnst mér að vinna með síðu sem er græn þar sem hún minnir á sumarið þegar grasið er sem grænast og gerir mig því rólegan þegar ég er að vinna á henni. Auðvellt er að finna undirsíður þar sem maður getur bæði skrollað og fundið þannig titlana, einnig er hægt að smella í hornið þar sem poppar upp hvaða kafla þú villt skoða. Auðvitað var hugsað út í það að hafa síðu sem væri mjög flott og einstök en einfaldleikinn er besta skipulagið. Myndir voru fengnar frá Persónulegum albúmum og einnig samfélagsmiðlum. Ég lærði svo hvernig ætti að setja upp síðuna með því að skoða kóða frá þessari síðu og öðrum síðum einnig, og fiktaði mig þannig áfram. Þegar ég var að setja upp git þá lenti ég í algjöru veseni þar sem bashið var alltaf að banna mér að fara inn í skránna og var það eflaust vegna þess að það fór alltaf leið inn á onedrivið hjá mér. </p>
+									<p>Sniðmátið af þessari síðu er sótt af html5up.net og var innblásturinn fenginn af því hversu snirtileg síðan var og hversu einfalt er að skoða upplýsingar á henni. Gott finnst mér að vinna með síðu sem er græn þar sem hún minnir á sumarið þegar grasið er sem grænast og gerir mig því rólegan þegar ég er að vinna á henni. Auðvellt er að finna undirsíður þar sem maður getur bæði skrollað og fundið þannig titlana, einnig er hægt að smella í hornið þar sem poppar upp hvaða kafla þú villt skoða. Auðvitað var hugsað út í það að hafa síðu sem væri mjög flott og einstök en einfaldleikinn er besta skipulagið. Myndir voru fengnar frá Persónulegum albúmum og einnig samfélagsmiðlum.  Ég lærði svo hvernig ætti að setja upp síðuna með því að skoða kóða frá þessari síðu og öðrum síðum einnig og fiktaði mig þannig áfram,  chat gpg hjálpaði einnig mikið og youtube myndbönd líka. Þegar ég var að setja upp git þá lenti ég í algjöru veseni þar sem bashið var alltaf að banna mér að fara inn í skránna og var það eflaust vegna þess að það fór alltaf leið inn á onedrivið hjá mér. </p>
                                     <p><img src="images/villa.png" alt="" style="width: 300px; height: 200px; margin-right: 20px;" /><p>
                                     <p>Ég hélt að það væri ekkert til að laga þetta þar til ég talaði við bekkinn minn um hvort að þau væru að lenda í einhverju veseni með þetta. Þá fékk ég það svar að allir voru að draga skrárnar sínar yfir í github.</p>
                                     <p><img src="images/faerayfir.png" alt="" style="width: 300px; height: 200px; margin-right: 20px;" /><p>
